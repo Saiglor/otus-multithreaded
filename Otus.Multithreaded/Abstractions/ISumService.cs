@@ -5,6 +5,6 @@ namespace Otus.Multithreaded.Abstractions
 {
     public interface ISumService
     {
-        int GetSum(List<int> items);
+        int GetSum(IEnumerable<int> items);
     }
 }

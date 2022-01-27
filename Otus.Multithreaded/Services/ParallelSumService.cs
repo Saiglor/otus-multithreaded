@@ -12,7 +12,7 @@ namespace Otus.Multithreaded.Services
         private int _countThread = 4;
         private int _sum;
 
-        public int GetSum(List<int> items)
+        public int GetSum(IEnumerable<int> items)
         {
             _event = new CountdownEvent(_countThread);
 

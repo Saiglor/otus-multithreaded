@@ -5,7 +5,7 @@ namespace Otus.Multithreaded.Services
 {
     public class SumService : ISumService
     {
-        public int GetSum(List<int> items)
+        public int GetSum(IEnumerable<int> items)
         {
             var res = 0;
 

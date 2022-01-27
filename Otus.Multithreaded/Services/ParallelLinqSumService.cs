@@ -6,7 +6,7 @@ namespace Otus.Multithreaded.Services
 {
     public class ParallelLinqSumService : ISumService
     {
-        public int GetSum(List<int> items)
+        public int GetSum(IEnumerable<int> items)
         {
             return items.AsParallel().Sum();
         }
